@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1195FizzBuzzMultithreaded\FizzBuzz.cs" />
     <Compile Include="1195FizzBuzzMultithreaded\UnitTest1.cs" />
     <Compile Include="PrintFooBarAlternately\FooBar.cs" />
     <Compile Include="PrintFooBarAlternately\UnitTest1.cs" />
