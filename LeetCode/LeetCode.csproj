@@ -49,6 +49,10 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1116PrintZeroEvenOdd\ZeroEvenOdd.cs" />
+    <Compile Include="1116PrintZeroEvenOdd\UnitTest1.cs" />
+    <Compile Include="1117BuildingH2O\H2O.cs" />
+    <Compile Include="1117BuildingH2O\UnitTest1.cs" />
     <Compile Include="1195FizzBuzzMultithreaded\FizzBuzz.cs" />
     <Compile Include="1195FizzBuzzMultithreaded\UnitTest1.cs" />
     <Compile Include="PrintFooBarAlternately\FooBar.cs" />

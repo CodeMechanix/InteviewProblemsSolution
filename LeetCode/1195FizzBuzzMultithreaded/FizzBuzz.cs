@@ -19,9 +19,10 @@ namespace LeetCode._1195FizzBuzzMultithreaded
 
         public FizzBuzz(int n)
         {
-            this.n = n+1;
+            this.n = n + 1;
             _resetEvent1.Set();
         }
+
         private void Up()
         {
             lock (lockObj)
@@ -29,6 +30,7 @@ namespace LeetCode._1195FizzBuzzMultithreaded
                 count++;
             }
         }
+
         private void Down()
         {
             lock (lockObj)
@@ -36,6 +38,7 @@ namespace LeetCode._1195FizzBuzzMultithreaded
                 count--;
             }
         }
+
         private int Read()
         {
             lock (lockObj)
@@ -43,14 +46,15 @@ namespace LeetCode._1195FizzBuzzMultithreaded
                 return count;
             }
         }
+
         // printFizz() outputs "fizz".
-        public void Fizz(Action printFizz)//"Fizz" if i is divisible by 3 and not 5,
+        public void Fizz(Action printFizz) //"Fizz" if i is divisible by 3 and not 5,
         {
             for (int i = 1; i < n; i++)
             {
 //                Debug.Write(i);
 
-                if (DivisibleBy(i,3) && !DivisibleBy(i,5))
+                if (DivisibleBy(i, 3) && !DivisibleBy(i, 5))
                 {
                     printFizz();
                 }
@@ -87,10 +91,10 @@ namespace LeetCode._1195FizzBuzzMultithreaded
                 {
                     printBuzz();
                 }
+
                 _resetEvent2.WaitOne();
                 Down();
             }
-
         }
 
         // printFizzBuzz() outputs "fizzbuzz".
@@ -109,8 +113,6 @@ namespace LeetCode._1195FizzBuzzMultithreaded
 
                 _resetEvent2.WaitOne();
                 Down();
-
-
             }
         }
 
@@ -128,9 +130,9 @@ namespace LeetCode._1195FizzBuzzMultithreaded
                 {
                     printNumber(i);
                 }
+
                 _resetEvent2.WaitOne();
                 Down();
-
             }
         }
 
@@ -140,12 +142,10 @@ namespace LeetCode._1195FizzBuzzMultithreaded
             {
                 return false;
             }
+
             return num % byNum == 0;
         }
-
-       
     }
-
 
 
     public class FizzBuzz_Semaphore
@@ -182,6 +182,7 @@ namespace LeetCode._1195FizzBuzzMultithreaded
                     printFizz();
                     x++;
                 }
+
                 ReleaseSemaphore(x);
             }
         }
@@ -201,6 +202,7 @@ namespace LeetCode._1195FizzBuzzMultithreaded
                     printBuzz();
                     x++;
                 }
+
                 ReleaseSemaphore(x);
             }
         }
@@ -349,7 +351,6 @@ namespace LeetCode._1195FizzBuzzMultithreaded
 
     public class FizzBuzz_Barrier
     {
-
         private int n;
         private Barrier b = new Barrier(4);
 
