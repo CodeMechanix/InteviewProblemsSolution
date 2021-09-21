@@ -55,7 +55,7 @@
     <Compile Include="1117BuildingH2O\UnitTest1.cs" />
     <Compile Include="1195FizzBuzzMultithreaded\FizzBuzz.cs" />
     <Compile Include="1195FizzBuzzMultithreaded\UnitTest1.cs" />
-    <Compile Include="1396DesignUndergroundSystem\Class1.cs" />
+    <Compile Include="1396DesignUndergroundSystem\UndergroundSystem.cs" />
     <Compile Include="1396DesignUndergroundSystem\UnitTest1.cs" />
     <Compile Include="355DesignTwitter\Twitter.cs" />
     <Compile Include="355DesignTwitter\UnitTest1.cs" />
