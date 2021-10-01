@@ -70,6 +70,7 @@
     <Compile Include="557ReverseWordsInStringIII\UnitTest1.cs" />
     <Compile Include="704BinarySearch\Solution.cs" />
     <Compile Include="704BinarySearch\UnitTest1.cs" />
+    <Compile Include="876MiddleOfLinkedList\UnitTest1.cs" />
     <Compile Include="977SquaresofaSortedArray\UnitTest1.cs" />
     <Compile Include="PrintFooBarAlternately\FooBar.cs" />
     <Compile Include="PrintFooBarAlternately\UnitTest1.cs" />
