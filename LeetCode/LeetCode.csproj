@@ -59,10 +59,12 @@
     <Compile Include="1396DesignUndergroundSystem\UnitTest1.cs" />
     <Compile Include="167TwoSumII_InputArrayIsSorted\UnitTest1.cs" />
     <Compile Include="189RotateArray\UnitTest1.cs" />
+    <Compile Include="19RemoveNthNodeFromEndOfList\UnitTest1.cs" />
     <Compile Include="278FirstBadVersion\VersionControl.cs" />
     <Compile Include="278FirstBadVersion\Solution.cs" />
     <Compile Include="278FirstBadVersion\UnitTest1.cs" />
     <Compile Include="283MoveZeroes\UnitTest1.cs" />
+    <Compile Include="3.LongestSubstringWithoutRepeatingCharacters\UnitTest1.cs" />
     <Compile Include="344ReverseString\UnitTest1.cs" />
     <Compile Include="355DesignTwitter\Twitter.cs" />
     <Compile Include="355DesignTwitter\UnitTest1.cs" />
