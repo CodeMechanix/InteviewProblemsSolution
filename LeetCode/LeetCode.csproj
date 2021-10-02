@@ -70,6 +70,7 @@
     <Compile Include="355DesignTwitter\UnitTest1.cs" />
     <Compile Include="35SearchInsertPosition\UnitTest1.cs" />
     <Compile Include="557ReverseWordsInStringIII\UnitTest1.cs" />
+    <Compile Include="567.PermutationInString\UnitTest1.cs" />
     <Compile Include="704BinarySearch\Solution.cs" />
     <Compile Include="704BinarySearch\UnitTest1.cs" />
     <Compile Include="876MiddleOfLinkedList\UnitTest1.cs" />
