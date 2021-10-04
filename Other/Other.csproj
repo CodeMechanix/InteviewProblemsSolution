@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{61F6B744-C2BC-45A6-8BFE-6CFD4513F350}</ProjectGuid>
+    <ProjectGuid>{9F637291-1C84-4498-B89D-9D94886D8BBE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LeetCode</RootNamespace>
-    <AssemblyName>LeetCode</AssemblyName>
+    <RootNamespace>Other</RootNamespace>
+    <AssemblyName>Other</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -47,38 +47,10 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="1116PrintZeroEvenOdd\ZeroEvenOdd.cs" />
-    <Compile Include="1116PrintZeroEvenOdd\UnitTest1.cs" />
-    <Compile Include="1117BuildingH2O\H2O.cs" />
-    <Compile Include="1117BuildingH2O\UnitTest1.cs" />
-    <Compile Include="1195FizzBuzzMultithreaded\FizzBuzz.cs" />
-    <Compile Include="1195FizzBuzzMultithreaded\UnitTest1.cs" />
-    <Compile Include="1396DesignUndergroundSystem\UndergroundSystem.cs" />
-    <Compile Include="1396DesignUndergroundSystem\UnitTest1.cs" />
-    <Compile Include="167TwoSumII_InputArrayIsSorted\UnitTest1.cs" />
-    <Compile Include="189RotateArray\UnitTest1.cs" />
-    <Compile Include="19RemoveNthNodeFromEndOfList\UnitTest1.cs" />
-    <Compile Include="278FirstBadVersion\VersionControl.cs" />
-    <Compile Include="278FirstBadVersion\Solution.cs" />
-    <Compile Include="278FirstBadVersion\UnitTest1.cs" />
-    <Compile Include="283MoveZeroes\UnitTest1.cs" />
-    <Compile Include="3.LongestSubstringWithoutRepeatingCharacters\UnitTest1.cs" />
-    <Compile Include="344ReverseString\UnitTest1.cs" />
-    <Compile Include="355DesignTwitter\Twitter.cs" />
-    <Compile Include="355DesignTwitter\UnitTest1.cs" />
-    <Compile Include="35SearchInsertPosition\UnitTest1.cs" />
-    <Compile Include="557ReverseWordsInStringIII\UnitTest1.cs" />
-    <Compile Include="567.PermutationInString\UnitTest1.cs" />
-    <Compile Include="704BinarySearch\Solution.cs" />
-    <Compile Include="704BinarySearch\UnitTest1.cs" />
-    <Compile Include="733.FloodFill\UnitTest1.cs" />
-    <Compile Include="876MiddleOfLinkedList\UnitTest1.cs" />
-    <Compile Include="977SquaresofaSortedArray\UnitTest1.cs" />
-    <Compile Include="PrintFooBarAlternately\FooBar.cs" />
-    <Compile Include="PrintFooBarAlternately\UnitTest1.cs" />
+    <Compile Include="Iterator\UnitTest1.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
