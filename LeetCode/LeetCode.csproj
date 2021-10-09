@@ -72,6 +72,7 @@
     <Compile Include="35SearchInsertPosition\UnitTest1.cs" />
     <Compile Include="557ReverseWordsInStringIII\UnitTest1.cs" />
     <Compile Include="567.PermutationInString\UnitTest1.cs" />
+    <Compile Include="695.MaxAreaOfIsland\UnitTest1.cs" />
     <Compile Include="704BinarySearch\Solution.cs" />
     <Compile Include="704BinarySearch\UnitTest1.cs" />
     <Compile Include="733.FloodFill\UnitTest1.cs" />

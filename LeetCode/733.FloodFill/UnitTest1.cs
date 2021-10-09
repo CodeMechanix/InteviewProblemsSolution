@@ -23,13 +23,13 @@ namespace LeetCode._733.FloodFill
             int[][] image = new int[][]
             {
                 new int[] {0,0,0},
-                new int[] {0, 0,0},
+                new int[] {0,1,1 },
                
             };
 
             var imageLength = image.Length;
             var length = image[0].Length;
-            var floodFill = new Solution().FloodFill(image, 0, 0, 2);
+            var floodFill = new Solution().FloodFill(image, 1,1,1);
         }
     }
 
@@ -37,6 +37,13 @@ namespace LeetCode._733.FloodFill
     {
         public int[][] FloodFill(int[][] image, int sr, int sc, int newColor)
         {
+
+            if (image[sr][sc] ==newColor)
+            {
+                return image;
+            }
+
+
             Queue<Point> queue = new Queue<Point>();
             queue.Enqueue(new Point(sr, sc));
             int originalColor = image[sr][sc];
@@ -47,22 +54,21 @@ namespace LeetCode._733.FloodFill
                 Point dequeue = queue.Dequeue();
                 Paint(image, dequeue, newColor);
                Print(image);
-                List<Point> connectedPoints = GetConnectedPoints(image, dequeue);
-                List<Point> sameColorPoints = GetSameColorPoints(image, connectedPoints, originalColor);
-                sameColorPoints.ForEach(point =>
+                IEnumerable<Point> connectedPoints = GetConnectedPoints(image, dequeue);
+                IEnumerable<Point> sameColorPoints = GetSameColorPoints(image, connectedPoints, originalColor);
+                foreach (Point point in sameColorPoints)
                 {
                     if (!queue.Contains(point))
                     {
                         queue.Enqueue(point);
                     }
-                  
-                });
+                }
             }
 
             return image;
         }
 
-        private List<Point> GetConnectedPoints(int[][] image, Point p)
+        private IEnumerable<Point> GetConnectedPoints(int[][] image, Point p)
         {
             List<Point> list = new List<Point>()
             {
@@ -73,13 +79,13 @@ namespace LeetCode._733.FloodFill
             };
 
             //fix dimetions validation
-            return list.Where(point => point.X > -1 && point.X < image[point.X].Length &&
-                                       point.Y > -1 && point.Y < image.Length).ToList();
+            return list.Where(point => point.X > -1 && point.X < image.Length &&
+                                       point.Y > -1 && point.Y < image[point.X].Length);
         }
 
-        private List<Point> GetSameColorPoints(int[][] image, List<Point> points, int newColor)
+        private IEnumerable<Point> GetSameColorPoints(int[][] image, IEnumerable<Point> points, int newColor)
         {
-            return points.Where(point => image[point.X][point.Y] == newColor).ToList();
+            return points.Where(point => image[point.X][point.Y] == newColor);
         }
 
         private void Paint(int[][] image, Point point, int newColor)
