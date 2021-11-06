@@ -52,6 +52,9 @@
     <Compile Include="L1\BinaryGap\UnitTest1.cs" />
     <Compile Include="L2\CyclicRotation\UnitTest1.cs" />
     <Compile Include="L2\OddOccurrencesInArray\UnitTest1.cs" />
+    <Compile Include="L3\FrogJmp\UnitTest1.cs" />
+    <Compile Include="L3\PermMissingElem\UnitTest1.cs" />
+    <Compile Include="L3\TapeEquilibrium\UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
