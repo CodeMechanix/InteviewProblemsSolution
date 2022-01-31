@@ -57,6 +57,7 @@
     <Compile Include="L3\TapeEquilibrium\UnitTest1.cs" />
     <Compile Include="L4\FrogRiverOne.cs" />
     <Compile Include="L4\PermCheck.cs" />
+    <Compile Include="L4\MaxCounters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
