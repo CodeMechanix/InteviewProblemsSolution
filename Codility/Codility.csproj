@@ -58,6 +58,10 @@
     <Compile Include="L4\FrogRiverOne.cs" />
     <Compile Include="L4\PermCheck.cs" />
     <Compile Include="L4\MaxCounters.cs" />
+    <Compile Include="L4\MissingInteger.cs" />
+    <Compile Include="L5\PassingCars.cs" />
+    <Compile Include="L5\CountDiv.cs" />
+    <Compile Include="L5\GenomicRangeQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
