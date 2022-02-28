@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codility", "Codility\Codili
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canditech", "Canditech\Canditech.csproj", "{8B000AF0-3DBF-4CD2-A7D3-55D31B409AA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackerrank", "Hackerrank\Hackerrank.csproj", "{20264CE9-FDA5-4715-A663-B2181E30B630}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8B000AF0-3DBF-4CD2-A7D3-55D31B409AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B000AF0-3DBF-4CD2-A7D3-55D31B409AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B000AF0-3DBF-4CD2-A7D3-55D31B409AA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20264CE9-FDA5-4715-A663-B2181E30B630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20264CE9-FDA5-4715-A663-B2181E30B630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20264CE9-FDA5-4715-A663-B2181E30B630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20264CE9-FDA5-4715-A663-B2181E30B630}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
