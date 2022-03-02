@@ -57,6 +57,10 @@
     <Compile Include="TimeConversion.cs" />
     <Compile Include="FindMedian.cs" />
     <Compile Include="LonelyInteger.cs" />
+    <Compile Include="UnitTest1.cs" />
+    <Compile Include="CountingSort1.cs" />
+    <Compile Include="TowerBreakers.cs" />
+    <Compile Include="CaesarCipher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
