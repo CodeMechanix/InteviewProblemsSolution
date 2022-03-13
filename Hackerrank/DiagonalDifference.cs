@@ -5,10 +5,10 @@ using System.Collections.Generic;
 namespace Hackerrank
 {
     [TestClass]
-    public class UnitTest1
+    public class DiagonalDifference
     {
         [TestMethod]
-        public void DiagonalDifference()
+        public void TestMethod()
         {
             var difference = diagonalDifference(new List<List<int>>()
             {

@@ -47,6 +47,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AmazonShoppingCart.cs" />
@@ -57,10 +58,16 @@
     <Compile Include="TimeConversion.cs" />
     <Compile Include="FindMedian.cs" />
     <Compile Include="LonelyInteger.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="DiagonalDifference.cs" />
     <Compile Include="CountingSort1.cs" />
     <Compile Include="TowerBreakers.cs" />
     <Compile Include="CaesarCipher.cs" />
+    <Compile Include="palindromPIndex.cs" />
+    <Compile Include="RemoveSubFolders.cs" />
+    <Compile Include="GridChallenge.cs" />
+    <Compile Include="RecursiveDigitSum.cs" />
+    <Compile Include="NewYearChaos.cs" />
+    <Compile Include="MergeSortedLists.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
