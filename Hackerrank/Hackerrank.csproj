@@ -68,6 +68,7 @@
     <Compile Include="RecursiveDigitSum.cs" />
     <Compile Include="NewYearChaos.cs" />
     <Compile Include="MergeSortedLists.cs" />
+    <Compile Include="QueueUsingTwoStacks.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
