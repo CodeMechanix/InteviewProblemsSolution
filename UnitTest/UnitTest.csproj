@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{20264CE9-FDA5-4715-A663-B2181E30B630}</ProjectGuid>
+    <ProjectGuid>{408EFDA9-B4E9-4F76-9758-567A3A5B1DB9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Hackerrank</RootNamespace>
-    <AssemblyName>Hackerrank</AssemblyName>
+    <RootNamespace>UnitTest</RootNamespace>
+    <AssemblyName>UnitTest</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -47,30 +47,10 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AmazonShoppingCart.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AmazonCustomerReviews.cs" />
-    <Compile Include="PlusMinus.cs" />
-    <Compile Include="MiniMaxSum.cs" />
-    <Compile Include="TimeConversion.cs" />
-    <Compile Include="FindMedian.cs" />
-    <Compile Include="LonelyInteger.cs" />
-    <Compile Include="DiagonalDifference.cs" />
-    <Compile Include="CountingSort1.cs" />
-    <Compile Include="TowerBreakers.cs" />
-    <Compile Include="CaesarCipher.cs" />
-    <Compile Include="palindromPIndex.cs" />
-    <Compile Include="RemoveSubFolders.cs" />
-    <Compile Include="GridChallenge.cs" />
-    <Compile Include="RecursiveDigitSum.cs" />
-    <Compile Include="NewYearChaos.cs" />
-    <Compile Include="MergeSortedLists.cs" />
-    <Compile Include="QueueUsingTwoStacks.cs" />
-    <Compile Include="BalancedBrackets.cs" />
-    <Compile Include="Pairs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

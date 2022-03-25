@@ -62,6 +62,7 @@
     <Compile Include="L5\PassingCars.cs" />
     <Compile Include="L5\CountDiv.cs" />
     <Compile Include="L5\GenomicRangeQuery.cs" />
+    <Compile Include="L5\MinAvgTwoSlice.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

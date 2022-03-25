@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canditech", "Canditech\Cand
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackerrank", "Hackerrank\Hackerrank.csproj", "{20264CE9-FDA5-4715-A663-B2181E30B630}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{408EFDA9-B4E9-4F76-9758-567A3A5B1DB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{20264CE9-FDA5-4715-A663-B2181E30B630}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20264CE9-FDA5-4715-A663-B2181E30B630}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20264CE9-FDA5-4715-A663-B2181E30B630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{408EFDA9-B4E9-4F76-9758-567A3A5B1DB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{408EFDA9-B4E9-4F76-9758-567A3A5B1DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{408EFDA9-B4E9-4F76-9758-567A3A5B1DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{408EFDA9-B4E9-4F76-9758-567A3A5B1DB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
