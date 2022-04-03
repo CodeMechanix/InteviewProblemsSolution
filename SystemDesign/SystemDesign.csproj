@@ -50,8 +50,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CallCenter\Call.cs" />
-    <Compile Include="CallCenter\CallCenterManager.cs" />
+    <Compile Include="CallCenter\CallManager.cs" />
+    <Compile Include="CallCenter\CallDispatcher.cs" />
+    <Compile Include="CallCenter\Director.cs" />
+    <Compile Include="CallCenter\Employee.cs" />
     <Compile Include="CallCenter\IEmployee.cs" />
+    <Compile Include="CallCenter\Operator.cs" />
+    <Compile Include="CallCenter\Superviser.cs" />
     <Compile Include="CallCenter\UnitTest1.cs" />
     <Compile Include="Common\PriorityQueue.cs" />
     <Compile Include="UnitTest1.cs" />
