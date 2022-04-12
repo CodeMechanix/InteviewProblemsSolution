@@ -59,6 +59,8 @@
     <Compile Include="CallCenter\Superviser.cs" />
     <Compile Include="CallCenter\UnitTest1.cs" />
     <Compile Include="Common\PriorityQueue.cs" />
+    <Compile Include="JukeBox\Player.cs" />
+    <Compile Include="JukeBox\UnitTest1.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

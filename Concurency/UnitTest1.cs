@@ -13,9 +13,12 @@ namespace Concurency
         public void TestMethod1()
         {
             Task doWork = DoWork();
-            doWork.Wait();
 
-
+            while (true)
+            {
+                Debug.WriteLine("main");
+                doWork.Wait(1000);
+            }
         }
 
 
@@ -23,11 +26,13 @@ namespace Concurency
         {
             int val = 13;
 
+            Thread.Sleep(5000);
+
             await Task.Delay(TimeSpan.FromSeconds(5));
 
             val *= 2;
 
-           Thread.Sleep(10000);
+           Thread.Sleep(5000);
 
             Trace.WriteLine(val);
         }
