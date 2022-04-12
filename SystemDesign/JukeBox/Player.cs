@@ -11,16 +11,17 @@ namespace SystemDesign.JukeBox
     public class Player
     {
         private CancellationTokenSource token;
-        private Task playTask;
+        public Task PlayTask { get; private set; }
 
-        public async Task Play(string songName = "Track1")
+        public async Task Play(Song song)
         {
             token = new CancellationTokenSource();
 
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < song.Duration; i++)
             {
-                await Task.Delay(1000, token.Token);
-                Debug.WriteLine($"Playing song: {songName} - {i}");
+                PlayTask = Task.Delay(1000, token.Token);
+                await PlayTask;
+                Debug.WriteLine($"Playing song: {song.Name} - {i}sec");
             }
         }
 

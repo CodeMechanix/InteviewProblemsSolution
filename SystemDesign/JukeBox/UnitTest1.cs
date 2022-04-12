@@ -11,14 +11,13 @@ namespace SystemDesign.JukeBox
         [TestMethod]
         public void TestMethod1()
         {
-            Player player = new Player();
-            player.Play();
+            JukeBox box = new JukeBox();
+            box.AddSong(new Song() { Duration = 5, Name = "S1" });
+            box.AddSong(new Song() { Duration = 5, Name = "S2" });
 
-            Task.Delay(3000).Wait();
 
-            player.Stop();
+            Task.Delay(10000000).Wait();
 
-            Task.Delay(3000).Wait();
         }
     }
 }
