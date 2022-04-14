@@ -23,7 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nice", "Nice", "{3C9C5CC0-C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant", "Restaurant\Restaurant.csproj", "{0349466D-B619-4D1A-AA23-EE6946C509B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantTest", "UnitTest\RestaurantTest.csproj", "{BDD5AE5C-3D21-46EB-BE7F-B607A4B1E76D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantTest", "RestaurantTest\RestaurantTest.csproj", "{BDD5AE5C-3D21-46EB-BE7F-B607A4B1E76D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
