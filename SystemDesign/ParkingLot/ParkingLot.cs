@@ -8,10 +8,24 @@ namespace SystemDesign.ParkingLot
 {
     public class ParkingLot
     {
+        public ParkingLot()
+        {
+            ParkingFloor = new ParkingFloor(4);
+            EntrancePanel = new EntrancePanel();
+        }
+
         public int Id { get; set; }
         public string Location { get; set; }
         public ParkingRate ParkingRate { get; set; }
         public ExitPanel ExitPanel { get; set; }
+
+        public EntrancePanel EntrancePanel { get; set; }
+
+        // public HashSet<ParkingTicket> Tickets { get; set; }
+        public ParkingFloor ParkingFloor { get; set; }
+
+
+
 
         public bool AddParkingFloor()
         {
@@ -23,14 +37,62 @@ namespace SystemDesign.ParkingLot
             throw new NotImplementedException();
         }
 
-        public ParkingTicket GetNewParkingTicket()
+        public void GetNewParkingTicket()
         {
-            throw new NotImplementedException();
+            if (IsFull())
+            {
+                EntrancePanel.ShowMessage("Parking is Full");
+            }
+            else
+            {
+                var parkingTicket = new ParkingTicket()
+                {
+                    CreatedAt = DateTime.Now,
+                    Id = new Random().Next(int.MaxValue),
+                    ParkingTicketStatus = ParkingTicketStatus.Active,
+                };
+
+                //Tickets.Add(parkingTicket);
+
+                EntrancePanel.PrintTicket(parkingTicket);
+                EntrancePanel.OpenGate();
+                ParkingFloor.AddVehicle();
+            }
         }
 
         public bool IsFull()
         {
-            throw new NotImplementedException();
+            return ParkingFloor.IsFull();
         }
+    }
+
+    public class ParkingFloor
+    {
+        public string Name { get; set; }
+        public int Capacity { get; }
+        public int Used { get; set; }
+
+        public ParkingDisplayBoard ParkingDisplayBoard { get; set; }
+
+        public ParkingFloor(int capacity)
+        {
+            Capacity = capacity;
+        }
+
+        public bool IsFull()
+        {
+            return Capacity > Used;
+        }
+
+        public void AddVehicle()
+        {
+            Used++;
+            ParkingDisplayBoard.FreeSpots = Capacity - Used;
+        }
+    }
+
+    public class ParkingDisplayBoard
+    {
+        public int FreeSpots { get; set; }
     }
 }

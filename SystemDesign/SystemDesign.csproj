@@ -80,10 +80,12 @@
     <Compile Include="JukeBox\Player.cs" />
     <Compile Include="JukeBox\Song.cs" />
     <Compile Include="JukeBox\UnitTest1.cs" />
+    <Compile Include="ParkingLot\EntrancePanel.cs" />
     <Compile Include="ParkingLot\ExitPanel.cs" />
     <Compile Include="ParkingLot\ParkingLot.cs" />
     <Compile Include="ParkingLot\ParkingRate.cs" />
     <Compile Include="ParkingLot\ParkingTicket.cs" />
+    <Compile Include="ParkingLot\Payment.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

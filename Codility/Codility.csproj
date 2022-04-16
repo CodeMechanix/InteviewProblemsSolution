@@ -63,6 +63,8 @@
     <Compile Include="L5\CountDiv.cs" />
     <Compile Include="L5\GenomicRangeQuery.cs" />
     <Compile Include="L5\MinAvgTwoSlice.cs" />
+    <Compile Include="L6\Distinct.cs" />
+    <Compile Include="L6\MaxProductOfThree.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

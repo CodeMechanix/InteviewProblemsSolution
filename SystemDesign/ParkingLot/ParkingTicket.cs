@@ -9,11 +9,12 @@ namespace SystemDesign.ParkingLot
         public DateTime PayedAt { get; set; }
         public double PayedAmount  { get; set; }
         public ParkingTicketStatus ParkingTicketStatus { get; set; }
-        public Payment Payment { get; set; }
-    }
+        //public Payment Payment { get; set; }
 
-    public abstract class Payment
-    {
+        public override string ToString()
+        {
+            return $"{this.GetType().Name}, Id{Id}, CreatedAt:{CreatedAt}, ParkingTicketStatus:{ParkingTicketStatus}";
+        }
     }
 
     public enum ParkingTicketStatus
