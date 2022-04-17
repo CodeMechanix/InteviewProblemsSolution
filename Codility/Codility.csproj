@@ -65,6 +65,7 @@
     <Compile Include="L5\MinAvgTwoSlice.cs" />
     <Compile Include="L6\Distinct.cs" />
     <Compile Include="L6\MaxProductOfThree.cs" />
+    <Compile Include="L6\Triangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
