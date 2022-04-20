@@ -59,14 +59,27 @@ namespace SystemDesign.BookReader
                 }
                 case "OpenBook":
                 {
-                    Task findBook = FindBook(strings[1]);
-                    OpenBook(findBook.)
+                    Task<List<Book>> findBook = FindBook(strings[1]);
+                    await OpenBook(findBook.Result.First());
+                    Display.Text = Engine.CurrentPageText();
+                    Display.Header = Engine.CurrentBook.Title;
+                    Display.Footer = $"Page#:{Engine.CurrentPageNumber}";
+                    Display.Render();
                     break;
                 }
                 case "FindBook":
                 {
-                    await FindBook(strings[1]);
-                    Display.Text = Engine.PagesList.First();
+                    Task<List<Book>> findBook = FindBook(strings[1]);
+                    Display.Text = string.Join(Environment.NewLine, findBook.Result.Select(book => book.Title));
+                    Display.Render();
+                    break;
+                }
+                case ">":
+                {
+                    Engine.NextPage();
+                    Display.Text = Engine.CurrentPageText();
+                    Display.Header = Engine.CurrentBook.Title;
+                    Display.Footer = $"Page#:{Engine.CurrentPageNumber}";
                     Display.Render();
                     break;
                 }
@@ -78,7 +91,7 @@ namespace SystemDesign.BookReader
             }
         }
 
-        public async Task<Book> FindBook(string name)
+        public async Task<List<Book>> FindBook(string name)
         {
             return await Task.Run(() => Library.FindBook(name));
         }
@@ -110,16 +123,19 @@ namespace SystemDesign.BookReader
 
     internal class BookReaderEngine
     {
-        public int PageLength { get; set; } = 50;
+        public int PageLength { get; set; } = 25;
         public List<string> PagesList { get; set; }
-
+        public int CurrentPageNumber { get; set; }
+        public Book CurrentBook { get; set; }
 
         public async Task PreparePages(Book book)
         {
-            await Task.Run(() => Read(book));
+            CurrentBook = book;
+            CurrentPageNumber = 0;
+            await Task.Run(() => LoadFile(book));
         }
 
-        private void Read(Book book)
+        private void LoadFile(Book book)
         {
             Thread.Sleep(5000);
             PagesList = new List<string>();
@@ -146,6 +162,16 @@ namespace SystemDesign.BookReader
                 }
             }
         }
+
+        public void NextPage()
+        {
+            CurrentPageNumber++;
+        }
+
+        public string CurrentPageText()
+        {
+            return PagesList[CurrentPageNumber];
+        }
     }
 
     internal class BookReaderLibrary
@@ -164,11 +190,10 @@ namespace SystemDesign.BookReader
             };
         }
 
-        public Book FindBook(string name)
+        public List<Book> FindBook(string name)
         {
             Thread.Sleep(5000);
-            Book first = Books.First(book => book.Title.ToLower().Contains(name.ToLower()));
-            return first;
+            return Books.Where(book => book.Title.ToLower().Contains(name.ToLower())).ToList();
         }
     }
 
@@ -182,11 +207,18 @@ namespace SystemDesign.BookReader
     internal class BookReaderDisplay
     {
         public string Text { get; set; }
-
+        public string Header { get; set; }
+        public string Footer { get; set; }
 
         public void Render()
         {
+            Console.WriteLine("#################################################");
+            Console.WriteLine(Header);
+            Console.WriteLine("#################################################");
             Console.WriteLine(Text);
+            Console.WriteLine("#################################################");
+            Console.WriteLine(Footer);
+            Console.WriteLine("#################################################");
         }
     }
 }
