@@ -101,6 +101,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="BookReader\Lib\IrishFairyTales.txt" />
+    <Content Include="BookReader\Lib\The Legends Of King Arthur And His Knights.txt" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
