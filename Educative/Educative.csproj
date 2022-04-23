@@ -49,7 +49,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="multithreading\UnitTest1.cs" />
+    <Compile Include="multithreading\BlockingQueueTest.cs" />
+    <Compile Include="multithreading\ThreadSafeDeferredCallbackTest.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

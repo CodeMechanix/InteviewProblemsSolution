@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 namespace Educative.multithreading
 {
     [TestClass]
-    public class UnitTest1
+    public class BlockingQueueTest
     {
         [TestMethod]
-        public void BlockingQueueTest()
+        public void Test()
         {
             BlockingQueue<int> blockingQueue = new BlockingQueue<int>(3);
 
