@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="multithreading\BlockingQueueTest.cs" />
     <Compile Include="multithreading\ThreadSafeDeferredCallbackTest.cs" />
+    <Compile Include="multithreading\UnitTest1.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
