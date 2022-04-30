@@ -53,6 +53,7 @@
     <Compile Include="multithreading\ThreadSafeDeferredCallbackTest.cs" />
     <Compile Include="multithreading\CustomSemaphoreTest.cs" />
     <Compile Include="multithreading\ReadWriteLockByMonitorTest.cs" />
+    <Compile Include="multithreading\UnisexBathroomTest.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
