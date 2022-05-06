@@ -56,6 +56,7 @@
     <Compile Include="multithreading\UnisexBathroomTest.cs" />
     <Compile Include="multithreading\BarrierTest.cs" />
     <Compile Include="multithreading\UberRideProblemTest.cs" />
+    <Compile Include="multithreading\BarberShopTest.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
