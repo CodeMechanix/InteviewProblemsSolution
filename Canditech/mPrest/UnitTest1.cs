@@ -1,6 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Threading;
 
 namespace Canditech.NewFolder1
 {
@@ -10,7 +12,24 @@ namespace Canditech.NewFolder1
         [TestMethod]
         public void TestMethod1()
         {
-            var i = T(1, new []{2,3});
+            // var i = T(1, new []{2,3});
+
+            MyPublisher publisher = new MyPublisher();
+            MySubscriber mySubscriber = new MySubscriber("1");
+
+            publisher.Action += mySubscriber.Handler;
+
+
+           
+            publisher.Publish();
+
+            mySubscriber = null;
+
+            GC.Collect();
+
+            Thread.Sleep(1000);
+
+            publisher.Publish();
         }
 
 
@@ -43,5 +62,31 @@ namespace Canditech.NewFolder1
 
             return result;
         }
+    }
+
+    class MyPublisher
+    {
+        public event Action Action;
+
+        public void Publish()
+        {
+            Action.Invoke();
+        }
+    }
+
+    class MySubscriber
+    {
+        private readonly string _name;
+
+        public MySubscriber(string name)
+        {
+            _name = name;
+        }
+        public void Handler()
+        {
+            Trace.WriteLine($"{_name} - Handled event");
+        }
+
+
     }
 }
