@@ -71,6 +71,7 @@
     <Compile Include="QueueUsingTwoStacks.cs" />
     <Compile Include="BalancedBrackets.cs" />
     <Compile Include="Pairs.cs" />
+    <Compile Include="NoPrefixSet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
