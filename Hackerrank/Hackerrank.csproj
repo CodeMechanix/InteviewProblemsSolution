@@ -72,6 +72,7 @@
     <Compile Include="BalancedBrackets.cs" />
     <Compile Include="Pairs.cs" />
     <Compile Include="NoPrefixSet.cs" />
+    <Compile Include="EqualStacks.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
