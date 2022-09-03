@@ -59,7 +59,7 @@
     <Compile Include="multithreading\BarberShopTest.cs" />
     <Compile Include="multithreading\SupermanTest.cs" />
     <Compile Include="multithreading\MultithreadedMergeSortTest.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="multithreading\AsynchronousToSynchronousProblem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
