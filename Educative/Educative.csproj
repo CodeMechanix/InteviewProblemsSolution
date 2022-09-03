@@ -60,6 +60,7 @@
     <Compile Include="multithreading\SupermanTest.cs" />
     <Compile Include="multithreading\MultithreadedMergeSortTest.cs" />
     <Compile Include="multithreading\AsynchronousToSynchronousProblem.cs" />
+    <Compile Include="multithreading\OrderedPrintingTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
