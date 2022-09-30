@@ -63,6 +63,7 @@
     <Compile Include="multithreading\OrderedPrintingTest.cs" />
     <Compile Include="multithreading\PrintingFooBarNTimes.cs" />
     <Compile Include="multithreading\PrintingZeroEvenOdd.cs" />
+    <Compile Include="multithreading\H2OMachineTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
