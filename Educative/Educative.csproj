@@ -64,6 +64,7 @@
     <Compile Include="multithreading\PrintingFooBarNTimes.cs" />
     <Compile Include="multithreading\PrintingZeroEvenOdd.cs" />
     <Compile Include="multithreading\H2OMachineTest.cs" />
+    <Compile Include="multithreading\MultithreadedFizzBuzzTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
