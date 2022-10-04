@@ -68,6 +68,7 @@
     <Compile Include="L6\Triangle.cs" />
     <Compile Include="L7\StoneWallTest.cs" />
     <Compile Include="L7\BracketsTest.cs" />
+    <Compile Include="L7\FishTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
