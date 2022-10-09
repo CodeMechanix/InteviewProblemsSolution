@@ -70,6 +70,7 @@
     <Compile Include="L7\StoneWallTest.cs" />
     <Compile Include="L7\BracketsTest.cs" />
     <Compile Include="L7\FishTest.cs" />
+    <Compile Include="L8\DominatorTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
