@@ -71,6 +71,8 @@
     <Compile Include="L7\BracketsTest.cs" />
     <Compile Include="L7\FishTest.cs" />
     <Compile Include="L8\DominatorTest.cs" />
+    <Compile Include="L8\EquiLeaderTest.cs" />
+    <Compile Include="L9\MaxProfitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

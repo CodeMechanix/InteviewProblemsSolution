@@ -5,19 +5,46 @@ using System.Collections.Generic;
 namespace Codility.L8
 {
     [TestClass]
-    public class DominatorTest
+    public class EquiLeaderTest
     {
         [TestMethod]
         public void TestMethod1()
         {
-            var solution = new Solution().solution(new []{3,4,3,2,3,-1,3,3});
+            int solution = new Solution().solution(new[] { 4, 3, 4, 4, 4, 2 });
         }
 
-        public class Solution
+        class Solution
         {
-
-
             public int solution(int[] A)
+            {
+                int leaderCount = 0;
+
+                for (int i = 0; i < A.Length; i++)
+                {
+                    int[] array = new int[i + 1];
+                    Array.ConstrainedCopy(A, 0, array, 0, i + 1);
+                    int leftIndex = FindLeaderIndex(array);
+                    if (leftIndex < 0)
+                        continue;
+                    int leftLeader = array[leftIndex];
+
+                    array = new int[A.Length - i - 1];
+                    Array.ConstrainedCopy(A, i + 1, array, 0, A.Length - 1 - i);
+                    int rightIndex = FindLeaderIndex(array);
+                    if (rightIndex < 0)
+                        continue;
+
+                    if (leftLeader == array[rightIndex])
+                    {
+                        leaderCount++; 
+                    }
+                   
+                }
+
+                return leaderCount;
+            }
+
+            public int FindLeaderIndex(int[] A)
             {
                 //Find candidate
                 Stack<int> stack = new Stack<int>();
@@ -48,9 +75,9 @@ namespace Codility.L8
                 {
                     return -1;
                 }
-                
+
                 int count = 0;
-                int position=0;
+                int position = 0;
 
                 for (var index = 0; index < A.Length; index++)
                 {
@@ -62,7 +89,7 @@ namespace Codility.L8
                     }
                 }
 
-                if (count >= A.Length/2)
+                if (count >= A.Length / 2)
                 {
                     return position;
                 }
