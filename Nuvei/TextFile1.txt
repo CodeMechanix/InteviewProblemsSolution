@@ -1,0 +1,38 @@
+﻿
+
+Basic Exercise for Developers – Person Collection 
+Guidelines 
+You may implement your solution in C#. 
+Your solution should be well-designed according to OO principles. 
+You should email only PersonCollection class.
+Your class must pass compilation without any errors (I have IPerson interface).
+If you have any questions you can reply to this email
+Assumptions 
+The following interface is given: 
+Public interface IPerson 
+{ 
+int Id{get;}
+String FirstName{get;} 
+String LastName{get;}
+Date DateOfBirth {get;}
+int Height{get;} 
+// etc… there may be more, such as get property methods 
+//You cannot rely on the properties in this interface, they can be changed and removed.
+} 
+
+Requirements 
+1. You are asked to implement a new class called PersonCollection. 
+2. Your implementation should support the following operations: 
+a. Add - adds the person object which is given as input. This operation may be performed in WC time complexity of O(n) 
+b. Remove - removes the person object with the maximum (explanation below) value and returns it. This operation must be performed in WC time complexity of O(1) 
+c. Publish - publishes a notification to subscriber objects upon any Add/Remove. 
+
+3. Explanation of what does it mean that a person has the maximum value:
+a. There may be many possible "algorithms" to determine maximum value, by any existing properties of this interface/ any new properties that will be added in the future/ some other logic not related to person properties at all; you do not know in advance what algorithms may apply and which one should be used. Therefore, design your implementation to be as flexible as possible by supporting all potential algorithms. For example: if the developer of Person interface somehow changes its properties, then this should still not affect your implementation of PersonCollection in any way! 
+b. For a single instance of PersonCollection, there will be only a single matching algorithm i.e. there is no need to change the algorithm in between operations. 
+4. Your implementation should be thread safe. 
+
+Bonus: 
+Every 60 seconds the collection will notify to all subscribers about how much persons it is holding.
+Please suggest 2 different data-structures for the internal implementation of the relevant requirements. 
+Good luck! ☺
