@@ -73,6 +73,7 @@
     <Compile Include="L8\DominatorTest.cs" />
     <Compile Include="L8\EquiLeaderTest.cs" />
     <Compile Include="L9\MaxProfitTest.cs" />
+    <Compile Include="L9\MaxSliceSumTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
