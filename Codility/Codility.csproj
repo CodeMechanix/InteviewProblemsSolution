@@ -49,37 +49,39 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="L1\BinaryGap\UnitTest1.cs" />
-    <Compile Include="L2\CyclicRotation\UnitTest1.cs" />
-    <Compile Include="L2\OddOccurrencesInArray\UnitTest1.cs" />
-    <Compile Include="L3\FrogJmp\UnitTest1.cs" />
-    <Compile Include="L3\PermMissingElem\UnitTest1.cs" />
-    <Compile Include="L3\TapeEquilibrium\UnitTest1.cs" />
-    <Compile Include="L4\FrogRiverOne.cs" />
-    <Compile Include="L4\PermCheck.cs" />
-    <Compile Include="L4\MaxCounters.cs" />
-    <Compile Include="L4\MissingInteger.cs" />
-    <Compile Include="L5\PassingCars.cs" />
-    <Compile Include="L5\CountDiv.cs" />
-    <Compile Include="L5\GenomicRangeQuery.cs" />
-    <Compile Include="L5\MinAvgTwoSlice.cs" />
-    <Compile Include="L6\Distinct.cs" />
-    <Compile Include="L6\MaxProductOfThree.cs" />
-    <Compile Include="L6\Triangle.cs" />
-    <Compile Include="L6\NumberOfDiscIntersectionsTest.cs" />
-    <Compile Include="L7\StoneWallTest.cs" />
-    <Compile Include="L7\BracketsTest.cs" />
-    <Compile Include="L7\FishTest.cs" />
-    <Compile Include="L8\DominatorTest.cs" />
-    <Compile Include="L8\EquiLeaderTest.cs" />
-    <Compile Include="L9\MaxProfitTest.cs" />
-    <Compile Include="L9\MaxSliceSumTest.cs" />
+    <Compile Include="L01\BinaryGap\UnitTest1.cs" />
+    <Compile Include="L02\CyclicRotation\UnitTest1.cs" />
+    <Compile Include="L02\OddOccurrencesInArray\UnitTest1.cs" />
+    <Compile Include="L03\FrogJmp\UnitTest1.cs" />
+    <Compile Include="L03\PermMissingElem\UnitTest1.cs" />
+    <Compile Include="L03\TapeEquilibrium\UnitTest1.cs" />
+    <Compile Include="L04\FrogRiverOne.cs" />
+    <Compile Include="L04\PermCheck.cs" />
+    <Compile Include="L04\MaxCounters.cs" />
+    <Compile Include="L04\MissingInteger.cs" />
+    <Compile Include="L05\PassingCars.cs" />
+    <Compile Include="L05\CountDiv.cs" />
+    <Compile Include="L05\GenomicRangeQuery.cs" />
+    <Compile Include="L05\MinAvgTwoSlice.cs" />
+    <Compile Include="L06\Distinct.cs" />
+    <Compile Include="L06\MaxProductOfThree.cs" />
+    <Compile Include="L06\Triangle.cs" />
+    <Compile Include="L06\NumberOfDiscIntersectionsTest.cs" />
+    <Compile Include="L07\StoneWallTest.cs" />
+    <Compile Include="L07\BracketsTest.cs" />
+    <Compile Include="L07\FishTest.cs" />
+    <Compile Include="L08\DominatorTest.cs" />
+    <Compile Include="L08\EquiLeaderTest.cs" />
+    <Compile Include="L09\MaxProfitTest.cs" />
+    <Compile Include="L09\MaxSliceSumTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="L10\" />
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
