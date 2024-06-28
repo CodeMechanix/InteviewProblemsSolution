@@ -136,6 +136,7 @@
     <Compile Include="L09\MaxProfitTest.cs" />
     <Compile Include="L09\MaxSliceSumTest.cs" />
     <Compile Include="L10\PrimeAndComposite.cs" />
+    <Compile Include="L10\CountFactorsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

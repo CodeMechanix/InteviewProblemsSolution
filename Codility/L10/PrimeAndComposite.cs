@@ -16,14 +16,6 @@ namespace Codility.L10
 
         private int CountTurnedCoins(int n)
         {
-            /* create array of N coins
-             * execute For i : 0 -> N
-             * for each i
-             * calculate coin index = i * 1,2,3.. <= N
-             * flip coin for each index
-             * count fliped coins
-             */
-
             //create array of N coins
             Coin[] coins = new Coin[n]; 
             for (int i = 0; i < n; i++)
