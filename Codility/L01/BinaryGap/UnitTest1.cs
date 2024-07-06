@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 namespace Codility.L1.BinaryGap
 {
     [TestClass]
-    public class UnitTest1
+    public class BinaryGap
     {
         [TestMethod]
         public void TestMethod1()
