@@ -135,9 +135,11 @@
     <Compile Include="L08\EquiLeaderTest.cs" />
     <Compile Include="L09\MaxProfitTest.cs" />
     <Compile Include="L09\MaxSliceSumTest.cs" />
+    <Compile Include="L10\Peaks.cs" />
     <Compile Include="L10\PrimeAndComposite.cs" />
     <Compile Include="L10\CountFactorsTest.cs" />
     <Compile Include="L10\MinPerimeterRectangle.cs" />
+    <Compile Include="L10\Flags.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
