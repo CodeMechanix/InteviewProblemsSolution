@@ -140,6 +140,10 @@
     <Compile Include="L10\CountFactorsTest.cs" />
     <Compile Include="L10\MinPerimeterRectangle.cs" />
     <Compile Include="L10\Flags.cs" />
+    <Compile Include="L11\CountNonDivisible.cs" />
+    <Compile Include="L11\FactorList.cs" />
+    <Compile Include="L11\SieveOfEratos.cs" />
+    <Compile Include="L11\SieveOfEratosTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
