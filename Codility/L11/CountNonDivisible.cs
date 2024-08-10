@@ -1,11 +1,57 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Codility.L11
 {
+    class CountNonDivisibleQuick
+    {
+        private readonly int[] _ints;
+
+        public CountNonDivisibleQuick(int[] ints)
+        {
+            _ints = ints;
+        }
+
+        //public int[] Result()
+        //{
+        //    int max = _ints.Max();
+        //    var devisorsData = new DevisorsData().Result(max + 1);
+        //    var counterDic = Counters();
+
+
+        //    var arr = new int[_ints.Length];
+        //    for (int i = 0; i < _ints.Length; i++)
+        //    {
+        //        int value = _ints[i];
+        //        var countOfnotDevisors = _ints.Length - devisorsData[value].Count;
+
+
+        //    }
+
+
+        //}
+
+        private Dictionary<int, int> Counters()
+        {
+            var dic = new Dictionary<int, int>();
+            foreach (var i in _ints)
+            {
+                if (dic.ContainsKey(i))
+                {
+                    dic[i]++;
+                }
+                else
+                {
+                    dic[i] = 1;
+                }
+
+            }
+
+            return dic;
+        }
+
+    }
+
     internal class CountNonDivisible
     {
         private readonly int[] _values;
@@ -17,7 +63,7 @@ namespace Codility.L11
 
         public int[] Result()
         {
-           var results = new List<int>[_values.Length];
+            var results = new List<int>[_values.Length];
 
 
             for (int i = 0; i < _values.Length; i++)
@@ -29,7 +75,7 @@ namespace Codility.L11
                 }
 
                 int k = i;
-                while (k < _values.Length) 
+                while (k < _values.Length)
                 {
                     int deviser = _values[k];
                     if (results[k] == null)
@@ -41,7 +87,7 @@ namespace Codility.L11
                     {
                         results[i].Add(deviser);
                     }
-                    if ( deviser % devisible != 0)
+                    if (deviser % devisible != 0)
                     {
                         results[k].Add(devisible);
                     }

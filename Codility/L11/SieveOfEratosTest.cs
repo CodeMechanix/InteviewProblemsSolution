@@ -13,10 +13,13 @@ namespace Codility.L11
         [TestMethod]
         public void Run()
         {
-            //bool[] bools = new SieveOfEratos(18).Result();
-            //int[] ints = new FactorList(18).Result();
 
-            int[] ints = new CountNonDivisible(new int[] { 3,1,2,3,6 }).Result();
+            DevisorsData devisorsData = new DevisorsData();
+            int[] ints = devisorsData.SemiPrimesInRanges(27, new[] {1,4,16}, new[] {26, 10 , 20} );
+
+
+
+
         }
     }
 }
