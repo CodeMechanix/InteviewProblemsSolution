@@ -19,7 +19,7 @@ namespace Codility.L11
         public bool[] Result()
         {
             var filtered = new bool[_length];
-            for (int i = 0; i < filtered.Length; i++)
+            for (int i = 2; i < filtered.Length; i++)
             {
                 filtered[i] = true;
             }
