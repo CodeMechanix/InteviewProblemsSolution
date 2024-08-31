@@ -147,6 +147,8 @@
     <Compile Include="L11\SieveOfEratosTest.cs" />
     <Compile Include="L12\Gcd.cs" />
     <Compile Include="L12\EuclideanAlgorithmTest.cs" />
+    <Compile Include="L13\FibFrog.cs" />
+    <Compile Include="L13\FibonacciNumbersTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
