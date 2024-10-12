@@ -149,6 +149,8 @@
     <Compile Include="L12\EuclideanAlgorithmTest.cs" />
     <Compile Include="L13\FibFrog.cs" />
     <Compile Include="L13\FibonacciNumbersTest.cs" />
+    <Compile Include="L14\MinMaxDivisionTest.cs" />
+    <Compile Include="L14\NailingPlanksTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
