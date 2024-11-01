@@ -151,6 +151,7 @@
     <Compile Include="L13\FibonacciNumbersTest.cs" />
     <Compile Include="L14\MinMaxDivisionTest.cs" />
     <Compile Include="L14\NailingPlanksTest.cs" />
+    <Compile Include="L15\UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
