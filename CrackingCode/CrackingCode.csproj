@@ -114,6 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArraysAndStrings\IsUniqueTest.cs" />
+    <Compile Include="ArraysAndStrings\CheckPermutationTest.cs" />
     <Compile Include="Cache\Cache.cs" />
     <Compile Include="Cache\CacheTest.cs" />
     <Compile Include="Sorting\MergeSortTest.cs" />
