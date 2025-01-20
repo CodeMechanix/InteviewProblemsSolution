@@ -28,12 +28,12 @@ namespace SystemDesign.BookReader
         }
     }
 
-    public class Program
-    {
-        public static void Main()
-        {
-            BookReaderManager manager = new BookReaderManager();
-            manager.ReadConsole();
-        }
-    }
+    //public class Program
+    //{
+    //    public static void Main()
+    //    {
+    //        BookReaderManager manager = new BookReaderManager();
+    //        manager.ReadConsole();
+    //    }
+    //}
 }
