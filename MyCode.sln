@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuvei", "Nuvei\Nuvei.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementsProgrammingInterviews", "ElementsProgrammingInterviews\ElementsProgrammingInterviews.csproj", "{F7E1A462-1D6F-43DF-8CB8-94191B675C56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingPatterns", "CodingPatterns\CodingPatterns\CodingPatterns.csproj", "{BA7A1BFE-5679-4A7B-A972-FBEBEA8D6248}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,6 +91,10 @@ Global
 		{F7E1A462-1D6F-43DF-8CB8-94191B675C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7E1A462-1D6F-43DF-8CB8-94191B675C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7E1A462-1D6F-43DF-8CB8-94191B675C56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA7A1BFE-5679-4A7B-A972-FBEBEA8D6248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA7A1BFE-5679-4A7B-A972-FBEBEA8D6248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA7A1BFE-5679-4A7B-A972-FBEBEA8D6248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA7A1BFE-5679-4A7B-A972-FBEBEA8D6248}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
