@@ -17,7 +17,7 @@ namespace CodingPatterns.SlidingWindow
             var w = new FluidSlidingWindow([2, 1, 5, 2, 3, 2]);
 
             while (w.CanGrow()) {
-            
+
                 w.Grow();
                 Debug.WriteLine(w.Sum);
             }
@@ -30,19 +30,16 @@ namespace CodingPatterns.SlidingWindow
         }
 
         [TestMethod]
-        public void TestMethod2()
+        [DataRow(7, new int[] { 2, 1, 5, 2, 3, 2 }, 2)]
+        [DataRow(7, new int[] { 2, 1, 5, 2, 8 }, 1)]
+        [DataRow(8, new int[] { 3, 4, 1, 1, 6 }, 3)]
+        public void TestMethod2(int max, int [] array, int expected)
         {
-            var r = MinSizeSubArraySum.FindMinSubArray(7, [2, 1, 5, 2, 3, 2]);
-            r.ShouldBe(2);
+            var r = MinSizeSubArraySum.FindMinSubArray(max, array);
+            r.ShouldBe(expected);
           
         }
-        [TestMethod]
-        public void TestMethod3()
-        {
-            var r = MinSizeSubArraySum.FindMinSubArray(7, [2, 1, 5, 2, 8]);
-            r.ShouldBe(1);
-
-        }
+      
     }
 
     class MinSizeSubArraySum
