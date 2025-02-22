@@ -12,13 +12,66 @@ namespace CodingPatterns.SlidingWindow
         [DataRow("abbbaacb", "abc", true)]
         public void Test(string str, string pattern, bool result)
         {
-            StringPermutation.findPermutation(str, pattern)
+            StringPermutation.findPermutationV2(str, pattern)
                 .ShouldBe(result);
         }
     }
 
     class StringPermutation
     {
+
+        public static bool findPermutationV2(string str, string pattern)
+        {
+            var frequency = new Dictionary<char, int>();
+            foreach (char ch in pattern) {
+
+                if (frequency.ContainsKey(ch))
+                {
+                    frequency[ch]++;
+                }
+                else
+                {
+                    frequency[ch] = 1;
+                }
+            }
+
+            var matchCount = 0;
+            var start = -1;
+
+            for (int end = 0; end < str.Length; end++)
+            {
+                var currentValueInWindow = str[end];
+
+                if (frequency.ContainsKey(currentValueInWindow))
+                {
+                    frequency[currentValueInWindow]--;
+                    matchCount++;
+                }
+
+                while ((end - start) > pattern.Length ||
+                   frequency.ContainsKey(currentValueInWindow) && frequency[currentValueInWindow] < 0
+                    )//shrink
+                {
+                    var firstValueInVindow = str[start+1];
+                    if (frequency.ContainsKey(firstValueInVindow))
+                    {
+                        frequency[firstValueInVindow]++;
+                        matchCount--;
+                    }
+                    start++;
+                }
+
+
+                if (matchCount == pattern.Length)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+
         public static bool findPermutation(string str, string pattern)
         {
             int start = 0;
