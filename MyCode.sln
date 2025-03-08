@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementsProgrammingIntervie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingPatterns", "CodingPatterns\CodingPatterns\CodingPatterns.csproj", "{BA7A1BFE-5679-4A7B-A972-FBEBEA8D6248}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingProblems", "CodingProblems\CodingProblems.csproj", "{961A14E9-A55B-414A-947F-E35603CE2875}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +97,10 @@ Global
 		{BA7A1BFE-5679-4A7B-A972-FBEBEA8D6248}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA7A1BFE-5679-4A7B-A972-FBEBEA8D6248}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA7A1BFE-5679-4A7B-A972-FBEBEA8D6248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{961A14E9-A55B-414A-947F-E35603CE2875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{961A14E9-A55B-414A-947F-E35603CE2875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{961A14E9-A55B-414A-947F-E35603CE2875}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{961A14E9-A55B-414A-947F-E35603CE2875}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
