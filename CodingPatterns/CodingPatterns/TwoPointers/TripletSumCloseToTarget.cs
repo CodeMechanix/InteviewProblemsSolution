@@ -23,7 +23,6 @@ namespace CodingPatterns.TwoPointers
     }
     class TripletSumCloseToTarget
     {
-
         public static int searchTriplet(int[] arr, int targetSum)
         {
             Array.Sort(arr);
