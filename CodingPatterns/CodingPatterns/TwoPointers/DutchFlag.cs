@@ -10,7 +10,7 @@ namespace CodingPatterns.TwoPointers
         [DataRow(new[] { 2, 2, 0, 1, 2, 0 }, new[] { 0, 0, 1, 2, 2, 2 })]
         public void Test(int[] arr, int[] result)
         {
-            DutchFlag.sort(arr);
+            DutchFlag.sort(arr); 
             arr.ShouldBe(result);
         }
     }
