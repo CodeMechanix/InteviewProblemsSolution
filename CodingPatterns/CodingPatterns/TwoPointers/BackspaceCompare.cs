@@ -53,7 +53,6 @@ namespace CodingPatterns.TwoPointers
             while (right >= 0) { 
             
                 var c = str[right];
-
                 if (c == '#')
                 {
                     backSpaceCount++;
