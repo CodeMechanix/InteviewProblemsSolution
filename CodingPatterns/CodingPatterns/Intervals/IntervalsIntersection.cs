@@ -1,4 +1,5 @@
-﻿using Shouldly;
+﻿using CodingPatterns.Intervals;
+using Shouldly;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -71,6 +72,7 @@ namespace CodingPatterns.Intervals
                 hasNext_1 = e_1.MoveNext();
                 hasNext_2 = e_2.MoveNext();
             }
+
 
             return intervalsIntersection.ToArray();
         }
