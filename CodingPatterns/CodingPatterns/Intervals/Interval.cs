@@ -1,6 +1,9 @@
 ﻿namespace CodingPatterns.Intervals
 {
-    class Interval
+
+
+    
+        public class Interval
     {
         public int start;
         public int end;
@@ -11,4 +14,5 @@
             this.end = end;
         }
     };
+    
 }

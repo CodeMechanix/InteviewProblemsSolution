@@ -30,7 +30,9 @@ namespace CodingPatterns.Intervals
             });
         }
     }
-    internal class InsertInterval
+
+
+    public partial class InsertInterval
     {
         public static List<Interval> insert(List<Interval> intervals, Interval newInterval)
         {
